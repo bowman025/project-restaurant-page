@@ -1,0 +1,1 @@
+export const greetingHome = "This is the Home page. Yo!";

@@ -1,0 +1,1 @@
+export const greetingAbout = "This is the About page. Hello!";

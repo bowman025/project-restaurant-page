@@ -1,0 +1,1 @@
+export const greetingMenu = "This is the Menu page. Howdy!";
