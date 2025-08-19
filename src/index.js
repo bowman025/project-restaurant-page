@@ -8,8 +8,6 @@ console.log(greetingHome);
 console.log(greetingMenu);
 console.log(greetingAbout);
 
-const content = document.querySelector("#content");
+import { createMenu } from "./tabs/menu.js";
 
-import {container} from "./tabs/menu.js";
-
-content.appendChild(container);
+createMenu();

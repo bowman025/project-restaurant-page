@@ -9,6 +9,10 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 img, picture, video, canvas, svg {
@@ -31,6 +35,30 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
-.cake {
-    width: 200px;
+.container-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+    max-width: 900px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex: 1 1 180px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+
+.image {
+    min-width: 140px;
+    max-width: 220px;
 }

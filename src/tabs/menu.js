@@ -9,81 +9,49 @@ import cake6 from "../assets/imgs/cake-6.png";
 import cake7 from "../assets/imgs/cake-7.png";
 import cake8 from "../assets/imgs/cake-8.png";
 import cake9 from "../assets/imgs/cake-9.png";
+import cake10 from "../assets/imgs/cake-10.png";
 
-const cakeOne = document.createElement("img");
-cakeOne.classList.add("cake", "cake-1");
-cakeOne.src = cake1;
+const cakes = [
+    {name: "Cake One", description: "This is some text about Cake One", price: "$9.99", image: cake1},
+    {name: "Cake Two", description: "This is some text about Cake Two", price: "$9.99", image: cake2},
+    {name: "Cake Three", description: "This is some text about Cake Three", price: "$9.99", image: cake3},
+    {name: "Cake Four", description: "This is some text about Cake Four", price: "$9.99", image: cake4},
+    {name: "Cake Five", description: "This is some text about Cake Five", price: "$9.99", image: cake5},
+    {name: "Cake Six", description: "This is some text about Cake Six", price: "$9.99", image: cake6},
+    {name: "Cake Seven", description: "This is some text about Cake Seven", price: "$9.99", image: cake7},
+    {name: "Cake Eight", description: "This is some text about Cake Eight", price: "$9.99", image: cake8},
+    {name: "Cake Nine", description: "This is some text about Cake Nine", price: "$9.99", image: cake9},
+    {name: "Cake Ten", description: "This is some text about Cake Ten", price: "$9.99", image: cake10},
+];
 
-const cakeTwo = document.createElement("img");
-cakeTwo.classList.add("cake", "cake-2");
-cakeTwo.src = cake2;
+function createMenu() {
+    const containerMenu = document.createElement("div");
+    containerMenu.classList.add("container-menu");
 
-const cakeThree = document.createElement("img");
-cakeThree.classList.add("cake", "cake-3");
-cakeThree.src = cake3;
+    cakes.forEach(cake => {
+        const title = document.createElement("h2");
+        title.classList.add("title");
+        title.textContent = cake.name;
+        const paraDesc = document.createElement("p");
+        paraDesc.classList.add("desc");
+        paraDesc.textContent = cake.description;
+        const paraPrice = document.createElement("p");
+        paraPrice.classList.add("price");
+        paraPrice.textContent = cake.price;
+        const cakeImg = document.createElement("img");
+        cakeImg.classList.add("image");
+        cakeImg.src = cake.image;
+        cakeImg.alt = cake.name;
+        const text = document.createElement("div");
+        text.classList.add("info");
+        text.append(title, paraDesc, paraPrice);
+        const card = document.createElement("div");
+        card.classList.add("card");
+        card.append(cakeImg, text);
+        containerMenu.append(card);
+    });
+    const content = document.querySelector("#content");
+    content.appendChild(containerMenu);
+}
 
-const cakeFour = document.createElement("img");
-cakeFour.classList.add("cake", "cake-4");
-cakeFour.src = cake4;
-
-const cakeFive = document.createElement("img");
-cakeFive.classList.add("cake", "cake-5");
-cakeFive.src = cake5;
-
-const cakeSix = document.createElement("img");
-cakeSix.classList.add("cake", "cake-6");
-cakeSix.src = cake6;
-
-const cakeSeven = document.createElement("img");
-cakeSeven.classList.add("cake", "cake-7");
-cakeSeven.src = cake7;
-
-const cakeEight = document.createElement("img");
-cakeEight.classList.add("cake", "cake-8");
-cakeEight.src = cake8;
-
-const cakeNine = document.createElement("img");
-cakeNine.classList.add("cake", "cake-9");
-cakeNine.src = cake9;
-
-const cardOne = document.createElement("div");
-cardOne.classList.add("card", "card-1");
-cardOne.appendChild(cakeOne);
-
-const cardTwo = document.createElement("div");
-cardTwo.classList.add("card", "card-2");
-cardTwo.appendChild(cakeTwo);
-
-const cardThree = document.createElement("div");
-cardThree.classList.add("card", "card-3");
-cardThree.appendChild(cakeThree);
-
-const cardFour = document.createElement("div");
-cardFour.classList.add("card", "card-4");
-cardFour.appendChild(cakeFour);
-
-const cardFive = document.createElement("div");
-cardFive.classList.add("card", "card-5");
-cardFive.appendChild(cakeFive);
-
-const cardSix = document.createElement("div");
-cardSix.classList.add("card", "card-6");
-cardSix.appendChild(cakeSix);
-
-const cardSeven = document.createElement("div");
-cardSeven.classList.add("card", "card-7");
-cardSeven.appendChild(cakeSeven);
-
-const cardEight = document.createElement("div");
-cardEight.classList.add("card", "card-8");
-cardEight.appendChild(cakeEight);
-
-const cardNine = document.createElement("div");
-cardNine.classList.add("card", "card-9");
-cardNine.appendChild(cakeNine);
-
-const container = document.createElement("div");
-container.classList.add("container");
-container.append(cardOne, cardTwo, cardThree, cardFour, cardFive, cardSix, cardSeven, cardEight, cardNine);
-
-export {container};
+export { createMenu };
