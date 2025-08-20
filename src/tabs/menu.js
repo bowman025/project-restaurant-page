@@ -14,7 +14,9 @@ import cake10 from "../assets/imgs/cake-10.png";
 function createMenu() {
     const containerMenu = document.createElement("div");
     containerMenu.classList.add("menu-container");
-    const background = document.createElement("img");
+    const heading = document.createElement("h1");
+    heading.textContent = "Our selection of cakes";
+    containerMenu.appendChild(heading);
     const cakes = [
     {name: "Cake One", description: "This is some text about Cake One", price: "$9.99", image: cake1, id: 1},
     {name: "Cake Two", description: "This is some text about Cake Two", price: "$9.99", image: cake2, id: 2},
