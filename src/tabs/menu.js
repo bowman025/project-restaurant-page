@@ -11,7 +11,7 @@ import cake8 from "../assets/imgs/cake-8.png";
 import cake9 from "../assets/imgs/cake-9.png";
 import cake10 from "../assets/imgs/cake-10.png";
 
-function createMenu() {
+export function createMenu() {
     const containerMenu = document.createElement("div");
     containerMenu.classList.add("menu-container");
     const heading = document.createElement("h1");
@@ -54,5 +54,3 @@ function createMenu() {
     const content = document.querySelector("#content");
     content.appendChild(containerMenu);
 }
-
-export { createMenu };

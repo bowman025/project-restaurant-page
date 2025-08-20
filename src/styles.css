@@ -11,8 +11,10 @@ body {
   -webkit-font-smoothing: antialiased;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  background-image: repeating-linear-gradient(45deg, rgb(234, 236, 98) 0px, rgb(234, 236, 98) 180px, rgb(236, 98, 224) 220px, rgb(236, 98, 224) 400px);
+  background-attachment: fixed;
 }
 
 img, picture, video, canvas, svg {
@@ -35,30 +37,43 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
-.menu-container {
+.menu-container,
+.about-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   min-width: 500px;
   max-width: 900px;
   margin: 20px;
   padding: 20px;
   border: 1px solid black;
   border-radius: 10px;
+}
+
+.menu-container {
   background: url("../src/assets/imgs/clouds-1.png") no-repeat center / cover;
 }
-.menu-container > h1 {
+
+.about-container {
+  background: url("../src/assets/imgs/clouds-2.png") no-repeat center / cover;
+  /* flex-direction: column; */
+  /* justify-self: stretch; */
+}
+
+.menu-container > h1,
+.about-container > h1 {
   width: 100%;
   text-align: center;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  background-image: linear-gradient(90deg, #aebd6b, #9ba758);
+  background-image: linear-gradient(90deg, rgb(234, 236, 98), rgb(230, 233, 85));
   opacity: 0.95;
 }
 
-.menu-card {
+.menu-card,
+.about-card {
   display: flex;
   flex: 1 1 180px;
   margin: 10px;
@@ -67,13 +82,21 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.95;
 }
 
+.menu-card:hover,
+.about-card:hover {
+  outline: 5px solid whitesmoke;
+  opacity: 1;
+}
+
 .menu-card-1,
-.menu-card-2 {
+.menu-card-2,
+.about-card-1 {
   background-image: linear-gradient(90deg, #bd6bb7, #A758A2);
 }
 
 .menu-card-3,
-.menu-card-4 {
+.menu-card-4,
+.about-card-2 {
   background-image: linear-gradient(90deg, #759bca, #587BA7);
 }
 
@@ -92,7 +115,8 @@ h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(90deg, #c57373,#a75858);
 }
 
-.menu-image {
+.menu-image,
+.about-image {
   min-width: 140px;
   max-width: 220px;
 }
@@ -101,4 +125,15 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.about-card {
+  flex: 1 1 auto;
 }
