@@ -10,12 +10,14 @@ console.log(greetingAbout);
 
 import { createMenu } from "./tabs/menu.js";
 import { createAbout } from "./tabs/about.js";
+import { createHome } from "./tabs/home.js";
 
 const content = document.querySelector("#content");
 
 const homeBtn = document.querySelector(".home-btn");
 homeBtn.addEventListener("click", () => {
-    console.log("home button says click.");
+    removeContent();
+    createHome();
 });
 
 const menuBtn = document.querySelector(".menu-btn");
