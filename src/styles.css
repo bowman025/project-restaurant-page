@@ -126,11 +126,12 @@ nav > button:hover {
 }
 
 .home-card {
-  flex: 1 1 360px;
+  flex: 1 1 420px;
   padding: 20px;
 }
 
-.home-cake-card {
+.home-cake-card,
+.home-place-card {
   justify-content: space-between;
 }
 
@@ -189,8 +190,33 @@ nav > button:hover {
   border-radius: 10px;
 }
 
+.home-cake-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.home-cake-text {
+  text-align: justify;
+}
+
+.lillys {
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
 .home-place-info {
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.home-place-text {
   padding-left: 20px;
+  text-align:justify;
 }
 
 .menu-info {
@@ -208,5 +234,13 @@ nav > button:hover {
 
 .home-bottom-card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.home-bottom-images {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
 }
