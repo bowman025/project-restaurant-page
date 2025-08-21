@@ -7,21 +7,21 @@ export function createAbout() {
     const containerAbout = document.createElement("div");
     containerAbout.classList.add("about-container");
     const heading = document.createElement("h1");
-    heading.textContent = "The people making the magical cakes";
+    heading.textContent = "Some Facts about Us";
     containerAbout.appendChild(heading);
     const contacts = [
-        {   name: "Lilly (owner)",
-            description: "A couple of words about the owner, Lilly.",
-            email: "imaginary-lilly@email.com",
-            phone: "123-456-789",
+        {   name: "Lilly",
+            description: "Lilly is the owner of Lilly's Sweet Treats and the mastermind behind all the delicious cakes you can find on our menu. Each cake first appeared in her dream before she made it a reality for everyone to enjoy.",
+            email: "Email: imaginary-lilly@email.com",
+            phone: "Phone: 123-456-789",
             image: ownerImage,
             id: 1,
         },
         {
-            name: "Hal (manager)",
-            description: "Some nice words about the manager, Hal.",
-            email: "imaginary-hal@email.com",
-            phone: "987-654-321",
+            name: "Hal",
+            description: "Hal is Lilly's friendly robot assistant who makes sure the entire operation runs smoothly. He is in charge of everything that isn't cake making: he buys ingredients, does chores, cleans up, etc. He is also the first entity to taste each of Lilly's new cakes.",
+            email: "Email: imaginary-hal@email.com",
+            phone: "Phone: 987-654-321",
             image: managerImage,
             id: 2,
         },

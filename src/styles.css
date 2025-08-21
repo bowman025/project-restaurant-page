@@ -33,32 +33,72 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
+
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+nav > button {
+  padding: 10px 30px;
+  margin: 0px 30px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.4rem;
+}
+
+nav > button:hover {
+  outline: 3px solid whitesmoke;
+}
+
+.home-btn {
+  background-color: rgba(189, 107, 121, 0.9);
+}
+
+.home-btn:hover {
+  background-color: rgba(189, 107, 121, 1);
+}
+
+.menu-btn {
+  background-color: rgba(107, 152, 189, 0.9);
+}
+
+.menu-btn:hover {
+  background-color: rgba(107, 152, 189, 1);
+}
+
+.about-btn {
+  background-color: rgba(114, 189, 107, 1);
+}
+
+.about-btn:hover {
+  background-color: rgba(114, 189, 107, 1);
 }
 
 .menu-container,
 .about-container {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
-  /* align-items: center; */
   min-width: 500px;
   max-width: 900px;
   margin: 20px;
   padding: 20px;
-  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
-}
-
-.menu-container {
-  background: url("../src/assets/imgs/clouds-1.png") no-repeat center / cover;
-}
-
-.about-container {
-  background: url("../src/assets/imgs/clouds-2.png") no-repeat center / cover;
-  /* flex-direction: column; */
-  /* justify-self: stretch; */
 }
 
 .menu-container > h1,
@@ -80,6 +120,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
   border-radius: 10px;
   opacity: 0.95;
+}
+
+.about-card {
+  flex: 1 1 auto;
 }
 
 .menu-card:hover,
@@ -120,6 +164,9 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 140px;
   max-width: 220px;
 }
+.about-image {
+  border-radius: 10px;
+}
 
 .menu-info {
   display: flex;
@@ -132,8 +179,4 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
-}
-
-.about-card {
-  flex: 1 1 auto;
 }

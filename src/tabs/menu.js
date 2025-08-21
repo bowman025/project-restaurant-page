@@ -15,17 +15,17 @@ export function createMenu() {
     const containerMenu = document.createElement("div");
     containerMenu.classList.add("menu-container");
     const heading = document.createElement("h1");
-    heading.textContent = "Our selection of cakes";
+    heading.textContent = "Our Selection of Cakes";
     containerMenu.appendChild(heading);
     const cakes = [
-    {name: "Cake One", description: "This is some text about Cake One", price: "$9.99", image: cake1, id: 1},
-    {name: "Cake Two", description: "This is some text about Cake Two", price: "$9.99", image: cake2, id: 2},
-    {name: "Cake Three", description: "This is some text about Cake Three", price: "$9.99", image: cake3, id: 3},
-    {name: "Cake Four", description: "This is some text about Cake Four", price: "$9.99", image: cake4, id: 4},
-    {name: "Cake Five", description: "This is some text about Cake Five", price: "$9.99", image: cake5, id: 5},
-    {name: "Cake Six", description: "This is some text about Cake Six", price: "$9.99", image: cake6, id: 6},
-    {name: "Cake Seven", description: "This is some text about Cake Seven", price: "$9.99", image: cake7, id: 7},
-    {name: "Cake Eight", description: "This is some text about Cake Eight", price: "$9.99", image: cake8, id: 8},
+    {name: "Cake One", description: "This is some text about Cake One", price: "$5.99", image: cake1, id: 1},
+    {name: "Cake Two", description: "This is some text about Cake Two", price: "$5.99", image: cake2, id: 2},
+    {name: "Cake Three", description: "This is some text about Cake Three", price: "$6.99", image: cake3, id: 3},
+    {name: "Cake Four", description: "This is some text about Cake Four", price: "$6.99", image: cake4, id: 4},
+    {name: "Cake Five", description: "This is some text about Cake Five", price: "$7.99", image: cake5, id: 5},
+    {name: "Cake Six", description: "This is some text about Cake Six", price: "$7.99", image: cake6, id: 6},
+    {name: "Cake Seven", description: "This is some text about Cake Seven", price: "$8.99", image: cake7, id: 7},
+    {name: "Cake Eight", description: "This is some text about Cake Eight", price: "$8.99", image: cake8, id: 8},
     {name: "Cake Nine", description: "This is some text about Cake Nine", price: "$9.99", image: cake9, id: 9},
     {name: "Cake Ten", description: "This is some text about Cake Ten", price: "$9.99", image: cake10, id: 10},
     ];
