@@ -37,3 +37,5 @@ function removeContent() {
         content.removeChild(content.firstChild);
     };
 };
+
+createHome();

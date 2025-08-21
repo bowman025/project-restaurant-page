@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -15,6 +17,11 @@ body {
   align-items: center;
   background-image: repeating-linear-gradient(45deg, rgb(234, 236, 98) 0px, rgb(234, 236, 98) 180px, rgb(236, 98, 224) 220px, rgb(236, 98, 224) 400px);
   background-attachment: fixed;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(20, 20, 20);
 }
 
 img, picture, video, canvas, svg {
@@ -139,23 +146,24 @@ nav > button:hover {
   flex: 1 1 auto;
 }
 
-.menu-card:hover,
-.about-card:hover,
-.home-card:hover {
-  outline: 5px solid whitesmoke;
+.menu-card:hover {
+  outline: 4px solid whitesmoke;
   opacity: 1;
+  transform: scale(1.05);
+  transition-duration: 400ms;
 }
 
 .menu-card-1,
 .menu-card-2,
 .about-card-1,
-.home-card {
+.home-cake-card {
   background-image: linear-gradient(90deg, #bd6bb7, #A758A2);
 }
 
 .menu-card-3,
 .menu-card-4,
-.about-card-2 {
+.about-card-2,
+.home-place-card {
   background-image: linear-gradient(90deg, #759bca, #587BA7);
 }
 
@@ -165,7 +173,8 @@ nav > button:hover {
 }
 
 .menu-card-7,
-.menu-card-8 {
+.menu-card-8,
+.home-bottom-card {
   background-image: linear-gradient(90deg, #73c578,#58A75D);
 }
 
@@ -198,25 +207,25 @@ nav > button:hover {
 
 .home-cake-text {
   text-align: justify;
+  font-size: 1.1rem;
 }
 
 .lillys {
   font-size: 1.3rem;
   font-weight: 800;
-  font-style: italic;
 }
 
 .home-place-info {
+  padding-left: 20px;
   padding-right: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-end;
 }
 
 .home-place-text {
-  padding-left: 20px;
   text-align:justify;
+  font-size: 1.1rem;
 }
 
 .menu-info {
@@ -232,6 +241,12 @@ nav > button:hover {
   padding: 10px;
 }
 
+.about-desc,
+.about-email,
+.about-phone {
+  font-size: 1.1rem;
+}
+
 .home-bottom-card {
   display: flex;
   flex-direction: column;
@@ -243,4 +258,5 @@ nav > button:hover {
   display: flex;
   justify-content: center;
   margin-top: -30px;
+  margin-bottom: -20px;
 }

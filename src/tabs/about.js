@@ -7,7 +7,7 @@ export function createAbout() {
     const containerAbout = document.createElement("div");
     containerAbout.classList.add("about-container");
     const heading = document.createElement("h1");
-    heading.textContent = "Some Facts about Us";
+    heading.textContent = "Get to Know Us";
     containerAbout.appendChild(heading);
     const contacts = [
         {   name: "Lilly",

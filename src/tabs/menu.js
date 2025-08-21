@@ -18,16 +18,16 @@ export function createMenu() {
     heading.textContent = "Our Selection of Cakes";
     containerMenu.appendChild(heading);
     const cakes = [
-    {name: "Cake One", description: "This is some text about Cake One", price: "$5.99", image: cake1, id: 1},
-    {name: "Cake Two", description: "This is some text about Cake Two", price: "$5.99", image: cake2, id: 2},
-    {name: "Cake Three", description: "This is some text about Cake Three", price: "$6.99", image: cake3, id: 3},
-    {name: "Cake Four", description: "This is some text about Cake Four", price: "$6.99", image: cake4, id: 4},
-    {name: "Cake Five", description: "This is some text about Cake Five", price: "$7.99", image: cake5, id: 5},
-    {name: "Cake Six", description: "This is some text about Cake Six", price: "$7.99", image: cake6, id: 6},
-    {name: "Cake Seven", description: "This is some text about Cake Seven", price: "$8.99", image: cake7, id: 7},
-    {name: "Cake Eight", description: "This is some text about Cake Eight", price: "$8.99", image: cake8, id: 8},
-    {name: "Cake Nine", description: "This is some text about Cake Nine", price: "$9.99", image: cake9, id: 9},
-    {name: "Cake Ten", description: "This is some text about Cake Ten", price: "$9.99", image: cake10, id: 10},
+    {name: "BonBon", description: "A classic cake packed with all kinds of sugary treats.", price: "$5.99", image: cake1, id: 1},
+    {name: "PistachiYO", description: "Pistachios taken to a whole new level.", price: "$5.99", image: cake2, id: 2},
+    {name: "Mr. Butters", description: "Buttery delight to soothe you in the middle of the night.", price: "$6.99", image: cake3, id: 3},
+    {name: "The Grapeller", description: "A flavor that is slow to develop, but once it does it never lets go.", price: "$6.99", image: cake4, id: 4},
+    {name: "BirthdAI", description: "Perfect for birthdays. Comes with a free candle!", price: "$7.99", image: cake5, id: 5},
+    {name: "RoboHeart", description: "Robot or human or anyone in between - this one celebrates love in all its forms.", price: "$7.99", image: cake6, id: 6},
+    {name: "Cream-O", description: "The creamiest creamy cake you-ll ever taste. Take our word or try for yourself.", price: "$8.99", image: cake7, id: 7},
+    {name: "Melonious Monk", description: "Remember jazz? Well, this is what it would taste like if it were a cake.", price: "$8.99", image: cake8, id: 8},
+    {name: "Blueberry Blues", description: "Grab this one if you are feeling down, Charlie Brown.", price: "$9.99", image: cake9, id: 9},
+    {name: "Code Red", description: "Not for the faint of heart! Order this one only if you haven't tasted sugar in days.", price: "$9.99", image: cake10, id: 10},
     ];
     cakes.forEach(cake => {
         const title = document.createElement("h2");
