@@ -72,6 +72,5 @@ bottomInfo.innerHTML = "<span class=\"lillys\">Lilly's Sweet Treats</span> is a 
 bottomCard.append(bottomImages, bottomInfo);
 containerHome.append(heading, cakeCard, placeCard, bottomCard);
 
-const content = document.querySelector("#content");
-content.appendChild(containerHome);
+return containerHome;
 }

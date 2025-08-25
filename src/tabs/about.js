@@ -51,6 +51,5 @@ export function createAbout() {
         card.append(image, info);
         containerAbout.append(card);
     });
-    const content = document.querySelector("#content");
-    content.appendChild(containerAbout);
+    return containerAbout;
 }

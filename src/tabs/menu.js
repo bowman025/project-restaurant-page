@@ -51,6 +51,5 @@ export function createMenu() {
         card.append(cakeImg, info);
         containerMenu.append(card);
     });
-    const content = document.querySelector("#content");
-    content.appendChild(containerMenu);
+    return containerMenu;
 }

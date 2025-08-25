@@ -7,24 +7,16 @@ function createPage() {
     const content = document.querySelector("#content");
     const homeBtn = document.querySelector(".home-btn");
     homeBtn.addEventListener("click", () => {
-        removeContent();
-        createHome();
+        content.replaceChildren(createHome());
     });
     const menuBtn = document.querySelector(".menu-btn");
     menuBtn.addEventListener("click", () => {
-        removeContent();
-        createMenu();
+        content.replaceChildren(createMenu());
     });
     const aboutBtn = document.querySelector(".about-btn");
     aboutBtn.addEventListener("click", () => {
-        removeContent();
-        createAbout();
+        content.replaceChildren(createAbout());
     });
-    function removeContent() {
-        while (content.firstChild) {
-            content.removeChild(content.firstChild);
-        };
-    };
-    createHome();
+    content.appendChild(createHome());
 };
 createPage();
